@@ -1,0 +1,195 @@
+INFO  2018-07-29T01:21:46.879Z RequestReceived: POST /dev/apps/lagunitas/run/actions-on-google?node-id=NNNN ID: 1532827305320
+VERB  2018-07-29T01:21:46.880Z Payload:
+{
+  "user": {
+    "userId": "ABwppHFV1Mg2UGIrQWn3HUNq43Riu4vvbpqBH1YUun-L2XzT9diLUpCNVxbKmqc-YEMIWw5GNSnU8JmCD00",
+    "locale": "en-US",
+    "lastSeen": "2018-07-29T01:17:47Z",
+    "userStorage": "{\"data\":{}}"
+  },
+  "conversation": {
+    "conversationId": "1532827306269",
+    "type": "NEW"
+  },
+  "inputs": [
+    {
+      "intent": "actions.intent.MAIN",
+      "rawInputs": [
+        {
+          "inputType": "VOICE",
+          "query": "open Agent Orange"
+        }
+      ]
+    }
+  ],
+  "surface": {
+    "capabilities": [
+      {
+        "name": "actions.capability.AUDIO_OUTPUT"
+      },
+      {
+        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+      }
+    ]
+  },
+  "isInSandbox": true,
+  "availableSurfaces": [
+    {
+      "capabilities": [
+        {
+          "name": "actions.capability.WEB_BROWSER"
+        },
+        {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        },
+        {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }
+      ]
+    }
+  ]
+}
+INFO  2018-07-29T01:21:46.881Z Forwarding localhost:3000
+INFO  2018-07-29T01:21:46.921Z ResponseReceived ID: 1532827305320
+VERB  2018-07-29T01:21:46.922Z Payload:
+{"expectUserResponse":true,"expectedInputs":[{"inputPrompt":{"richInitialPrompt":{"items":[{"simpleResponse":{"textToSpeech":"PLACEHOLDER"}}]}},"possibleIntents":[{"intent":"actions.intent.NEW_SURFACE","inputValueData":{"@type":"type.googleapis.com/google.actions.v2.NewSurfaceValueSpec","capabilities":["actions.capability.SCREEN_OUTPUT"],"context":"To use this skill you need to sign in","notificationTitle":"Please sign in!"}}]}],"conversationToken":"{\"data\":{}}","userStorage":"{\"data\":{}}"}
+INFO  2018-07-29T01:22:06.592Z RequestReceived: POST /dev/apps/lagunitas/run/actions-on-google?node-id=NNNN ID: 1532827325161
+VERB  2018-07-29T01:22:06.597Z Payload:
+{
+  "user": {
+    "userId": "ABwppHFV1Mg2UGIrQWn3HUNq43Riu4vvbpqBH1YUun-L2XzT9diLUpCNVxbKmqc-YEMIWw5GNSnU8JmCD00",
+    "locale": "en-US",
+    "lastSeen": "2018-07-29T01:17:47Z",
+    "userStorage": "{\"data\":{}}"
+  },
+  "conversation": {
+    "conversationId": "1532827306269",
+    "type": "ACTIVE",
+    "conversationToken": "{\"data\":{}}"
+  },
+  "inputs": [
+    {
+      "intent": "actions.intent.NEW_SURFACE",
+      "rawInputs": [
+        {
+          "inputType": "VOICE"
+        }
+      ],
+      "arguments": [
+        {
+          "name": "NEW_SURFACE",
+          "extension": {
+            "@type": "type.googleapis.com/google.actions.v2.NewSurfaceValue",
+            "status": "OK"
+          }
+        }
+      ]
+    }
+  ],
+  "surface": {
+    "capabilities": [
+      {
+        "name": "actions.capability.WEB_BROWSER"
+      },
+      {
+        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+      },
+      {
+        "name": "actions.capability.AUDIO_OUTPUT"
+      },
+      {
+        "name": "actions.capability.SCREEN_OUTPUT"
+      }
+    ]
+  },
+  "isInSandbox": true,
+  "availableSurfaces": [
+    {
+      "capabilities": [
+        {
+          "name": "actions.capability.WEB_BROWSER"
+        },
+        {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        },
+        {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }
+      ]
+    }
+  ]
+}
+INFO  2018-07-29T01:22:06.598Z Forwarding localhost:3000
+INFO  2018-07-29T01:22:06.624Z ResponseReceived ID: 1532827325161
+VERB  2018-07-29T01:22:06.624Z Payload:
+{"expectUserResponse":true,"expectedInputs":[{"inputPrompt":{"richInitialPrompt":{"items":[{"simpleResponse":{"textToSpeech":"PLACEHOLDER"}}]}},"possibleIntents":[{"intent":"actions.intent.SIGN_IN","inputValueData":{"@type":"type.googleapis.com/google.actions.v2.SignInValueSpec","optContext":"To know if you are over 21"}}]}],"conversationToken":"{\"data\":{}}","userStorage":"{\"data\":{}}"}
+INFO  2018-07-29T01:22:07.037Z RequestReceived: POST /dev/apps/lagunitas/run/actions-on-google?node-id=NNNN ID: 1532827325805
+VERB  2018-07-29T01:22:07.037Z Payload:
+{
+  "user": {
+    "userId": "ABwppHFV1Mg2UGIrQWn3HUNq43Riu4vvbpqBH1YUun-L2XzT9diLUpCNVxbKmqc-YEMIWw5GNSnU8JmCD00",
+    "locale": "en-US",
+    "lastSeen": "2018-07-29T01:17:47Z",
+    "userStorage": "{\"data\":{}}"
+  },
+  "conversation": {
+    "conversationId": "1532827306269",
+    "type": "ACTIVE",
+    "conversationToken": "{\"data\":{}}"
+  },
+  "inputs": [
+    {
+      "intent": "actions.intent.SIGN_IN",
+      "rawInputs": [
+        {
+          "inputType": "VOICE"
+        }
+      ],
+      "arguments": [
+        {
+          "name": "SIGN_IN",
+          "extension": {
+            "@type": "type.googleapis.com/google.actions.v2.SignInValue",
+            "status": "OK"
+          }
+        }
+      ]
+    }
+  ],
+  "surface": {
+    "capabilities": [
+      {
+        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+      },
+      {
+        "name": "actions.capability.SCREEN_OUTPUT"
+      },
+      {
+        "name": "actions.capability.AUDIO_OUTPUT"
+      },
+      {
+        "name": "actions.capability.WEB_BROWSER"
+      }
+    ]
+  },
+  "isInSandbox": true,
+  "availableSurfaces": [
+    {
+      "capabilities": [
+        {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        },
+        {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        },
+        {
+          "name": "actions.capability.WEB_BROWSER"
+        }
+      ]
+    }
+  ]
+}
+INFO  2018-07-29T01:22:07.037Z Forwarding localhost:3000
+INFO  2018-07-29T01:22:07.044Z ResponseReceived ID: 1532827325805
+VERB  2018-07-29T01:22:07.044Z Payload:
+{"expectUserResponse":false,"finalResponse":{"richResponse":{"items":[{"simpleResponse":{"textToSpeech":"Whoohoo! You have signed in."}}]}},"conversationToken":"{\"data\":{}}","userStorage":"{\"data\":{}}"}
