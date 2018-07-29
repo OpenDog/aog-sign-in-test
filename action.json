@@ -1,0 +1,40 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "orange"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": []
+        }
+      }
+    },
+    {
+      "name": "BeerLinks",
+      "fulfillment": {
+        "conversationName": "orange"
+      },
+      "intent": {
+        "name": "actions.intent.TEXT",
+        "parameters": [],
+        "trigger": {
+          "queryPatterns": [
+            "give me a cold one"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "orange": {
+      "fulfillmentApiVersion": 2,
+      "name": "orange",
+      "url": "https://proxy.bespoken.tools/dev/apps/lagunitas/run/actions-on-google?node-id=NNNN"
+    }
+  },
+  "locale": "en"
+}

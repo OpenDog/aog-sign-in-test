@@ -1,0 +1,20 @@
+node_modules
+coverage
+dist
+
+src/**/*.js
+src/**/*.map
+src/**/*.js.map
+src/**/*.d.ts
+
+__test__/**/*.js
+__test__/**/*.js.map
+__test__/**/*.d.ts
+
+.idea
+.env
+
+.DS_Store
+
+# Serverless directories
+.serverless
